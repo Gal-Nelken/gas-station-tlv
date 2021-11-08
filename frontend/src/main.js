@@ -12,7 +12,7 @@ Vue.config.productionTip = false
 // --- GOOGLE MAP ---
 Vue.use(VueGoogleMaps, {
   load: {
-    key: "GOOGLE-MAP-KEY",
+    key: "GOOGLE-API-KEY",
     libraries: "places"
   }
 });
