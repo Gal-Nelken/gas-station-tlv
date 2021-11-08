@@ -1,0 +1,21 @@
+.station {
+    text-align: center;
+  .station-header {
+    display: flex;
+    flex-direction: column;
+    margin-block: 10px;
+    .station-header-title{
+        margin-block-end: 20px;
+    }
+  }
+  .home-line {
+    border: 3px double $clr2;
+    width: 100%;
+    margin-block: 10px;
+  }
+  .station-map{
+      width: 100%;
+        border: double $clr2 3px;
+        margin-block-end: 20px;
+    }
+}

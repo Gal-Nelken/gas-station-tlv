@@ -1,17 +1,17 @@
 <template>
   <ul class="table">
     <li class="table-row">
-      <h3>שם תחנה</h3>
-      <h3>כתובת</h3>
+      <h3 class="table-title">שם תחנה</h3>
+      <h3 class="table-title">כתובת</h3>
     </li>
-    <li v-if="stations.length < 1" class="table-row">אין תחנות להראות</li>
+    <li v-if="stations.length < 1" class="table-row table-title">אין תחנות תואמות להראות</li>
     <li v-for="(station, idx) in stations" :key="idx" class="table-row">
       <router-link
         :to="`/${station.attributes.shem_hevra}/${station.attributes.UniqueId}`"
         class="table-station-name"
         >{{ station.attributes.shem_esek }}</router-link
       >
-      <h4 class="table-station-adress">{{ station.attributes.t_ktovet }}</h4>
+      <h4 class="table-station-address">{{ station.attributes.t_ktovet }}</h4>
     </li>
     <google-map
       class="stations-map"

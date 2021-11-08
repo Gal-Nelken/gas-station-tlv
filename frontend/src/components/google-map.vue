@@ -66,6 +66,7 @@ export default {
 .google-map {
   width: 100%;
   height: 400px;
-  align-self: center;
+  align-self: stretch;
+  background-color: unset;
 }
 </style>

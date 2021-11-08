@@ -1,6 +1,10 @@
 <template>
-  <main class="home">
-    <h1>תדלק אותי!</h1>
+  <main class="home page">
+    <header class="home-header">
+    <h1 class="home-main-title">תדלק אותי בת"א!</h1>
+  <h2 class="home-sub-title">בחר חברת דלק </h2>
+    </header>
+    <hr class="home-line"/>
     <companies-list v-if="companiesToShow" :companies="companiesToShow" />
     <loader v-else />
   </main>

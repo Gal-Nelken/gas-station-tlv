@@ -7,17 +7,17 @@
 
 html {
   scroll-behavior: smooth;
-  background-color: $clr4;
+  background-color: $clr0;
 }
 #root {
-  background-color: $clr4;
+  background-color: $clr0;
 }
 
 body {
   margin: 0;
   font-family: livvic-semi-bold, Poppings, "Segoe UI", sans-serif;
-  color: $clr0;
-  background-color: $clr4;
+  color: $clr4;
+  background-color: $clr0;
 }
 
 img {
@@ -50,7 +50,7 @@ h2 {
 }
 
 h3 {
-  font-size: $fs18;
+  font-size: $fs25;
   line-height: rem(23px);
 }
 
@@ -104,16 +104,6 @@ ul {
 
 ::-webkit-scrollbar-corner {
   background: rgba(250, 250, 250, 1);
-}
-
-.loader {
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 .member-avatar {

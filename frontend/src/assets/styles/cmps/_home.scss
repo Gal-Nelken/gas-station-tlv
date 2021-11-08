@@ -1,0 +1,31 @@
+.home{
+  .home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-block-start: 10px;
+    .home-main-title {
+        color: $clr3;
+        font-weight: 700;
+        text-decoration: underline;
+        margin-block-end: 10px;
+    }
+    .home-sub-title {
+      color: $clr3;
+      font-weight: 500;
+    }
+  }
+
+
+  .home-line {
+    border: 3px double $clr2;
+    width: 100%;
+    margin-block: 20px;
+  }
+
+  .card {
+    font-weight: bold;
+  }
+}

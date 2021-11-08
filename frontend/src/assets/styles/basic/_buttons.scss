@@ -51,19 +51,20 @@ button {
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    color: $clr1;
-    background-color: $clr0;
+    color: $clr3;
+    background-color: $clr1;
     width: 30px;
     height: 15px;
     border-radius: 5px;
     transition: 150ms;
+    font-weight: bold;
+    font-size: $fs25;
     &:hover {
-        background-color: $clr4;
-        color: $clr3;
+        color: $clr2;
     }
     &:disabled {
-        color: $clr3;
-        background-color: $clr2;
+        color: $clr2;
+        background-color: $clr4;
     }
 }
 

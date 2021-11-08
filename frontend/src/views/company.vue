@@ -1,14 +1,13 @@
 <template>
-  <main>
-    <header>
-      <h2>חברת דלק: {{ name }}</h2>
-      <filter-by @filter="setFilter" />
+  <main class="company page">
+    <header  class="company-header">
+      <h2 class="company-header-title">חברת דלק: {{ name }}</h2>
+      <filter-by v-if="stationsToShow" @filter="setFilter" />
     </header>
-    <section v-if="stationsToShow">
-      <station-list :stations="stationsToShow" />
-      <router-link to="/">חזור</router-link>
-    </section>
+    <hr class="home-line"/>
+      <station-list v-if="stationsToShow" :stations="stationsToShow" />
     <loader v-else />
+      <router-link class="secondary-btn" to="/"> חזור</router-link>
   </main>
 </template>
 

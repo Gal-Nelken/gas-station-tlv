@@ -1,9 +1,14 @@
 <template>
-  <main v-if="stationToShow">
-    <h1>
-      {{ stationToShow.attributes.shem_esek }}
-    </h1>
+  <main v-if="stationToShow" class="station page">
+    <header class="station-header">
+      <h1 class="station-header-title">
+        תחנת {{ stationToShow.attributes.shem_esek }}
+      </h1>
+      <h3 class="station-header-address">נמצאת ב{{ stationToShow.attributes.t_ktovet }}</h3>
+    </header>
+    <hr class="home-line" />
     <googleMap
+      class="station-map"
       :center="getCenter"
       :locationMarkers="[
         {
@@ -12,7 +17,7 @@
         },
       ]"
     />
-    <router-link :to="`/${company}`">חזור</router-link>
+    <router-link class="secondary-btn" :to="`/${company}`">חזור</router-link>
   </main>
   <loader v-else />
 </template>

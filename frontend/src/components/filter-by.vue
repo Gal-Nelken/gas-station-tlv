@@ -1,11 +1,23 @@
 <template>
-  <div class="flex">
-    <select name="filter" id="filter" v-model="filterBy.name" @change="setFilter">
-      <option value="none">חפש לפי...</option>
-      <option value="shem_esek">שם עסק</option>
-      <option value="t_ktovet">כתובת</option>
+  <div class="company-filter">
+    <select
+      name="filter"
+      class="filter-select"
+      id="filter"
+      v-model="filterBy.name"
+      @change="setFilter"
+    >
+      <option class="filter-option" value="none">חפש לפי...</option>
+      <option class="filter-option" value="shem_esek">שם עסק</option>
+      <option class="filter-option" value="t_ktovet">כתובת</option>
     </select>
-      <input type="text" @input="setFilter" v-model="filterBy.str"  placeholder="חפש..." />
+    <input
+    class="filter-input"
+      type="text"
+      @input="setFilter"
+      v-model="filterBy.str"
+      placeholder="חפש..."
+    />
   </div>
 </template>
 
@@ -20,8 +32,7 @@ export default {
     };
   },
   destroyed() {
-    this.$emit("filter", '');
-
+    this.$emit("filter", "");
   },
   methods: {
     setFilter() {
